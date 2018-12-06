@@ -27,6 +27,18 @@ main section.categories-show {
         display: block;
       }
 
+      header .badge {
+        background-color: red;
+        opacity: .75;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 10px;
+      }
+
       footer {
         position: absolute;
         bottom: 0;
