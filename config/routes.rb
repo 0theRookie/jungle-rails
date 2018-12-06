@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
-
+  
   resource :cart, only: [:show] do
     post   :add_item
     post   :remove_item
@@ -18,6 +18,8 @@ Rails.application.routes.draw do
     resources :categories, except: [:destroy, :edit, :show, :update]
   end
 
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
