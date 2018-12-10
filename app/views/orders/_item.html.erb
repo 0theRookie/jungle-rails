@@ -10,6 +10,6 @@
     <p><%= item.product.description %></p>
   </td>
   <td>
-    $<%= Money.new(item.total_price_cents, 'USD') %>
+    Cost: $<%= Money.new(item.total_price_cents, 'CAD') %>
   </td>
 </tr>

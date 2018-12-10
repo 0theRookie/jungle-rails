@@ -10,7 +10,11 @@
     Here it is: <br>
     </p>
     <p>
-      Orders here...
+      <% @order.line_items.each do |item| %>
+        <%= render 'orders/item', item: item %>
+      <% end %>
+
+      <h3>Total: $<%= Money.new(@order.total_cents, 'USD') %></h3>
     </p>
     <p>Thanks for ordering and have a great day!</p>
   </body>

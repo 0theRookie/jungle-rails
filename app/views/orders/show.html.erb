@@ -11,7 +11,7 @@
       <%= render 'orders/item', item: item %>
     <% end %>
 
-    <h3>Total: $<%= Money.new(@order.total_cents, 'USD') %></h3>
+    <h3>Total: $<%= Money.new(@order.total_cents, 'CAD') %></h3>
 
   </div>
 
