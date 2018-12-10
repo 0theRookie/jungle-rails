@@ -7,7 +7,7 @@
       <% if enhanced_cart.length < 1 %>
         <h1>Your cart was not assembled!</h1>
         <p><b>Please put something in your cart, it appears to be empty.</b></p>
-
+        <%= link_to 'Home', :root %>
       <% else %>
         <div class="panel panel-default items">
           <table class="table table-bordered">
