@@ -199,6 +199,7 @@ DEPENDENCIES
   font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
+  money
   money-rails
   newrelic_rpm
   pg
