@@ -5,7 +5,7 @@
   </header>
 
   <div class="order-summary jumbotron">
-    <h2>Thank you for your order <%= @current_user || 'User' %>!</h2>
+    <h2>Thank you for your order <%= @order.email || 'User' %>!</h2>
 
     <% @order.line_items.each do |item| %>
       <%= render 'orders/item', item: item %>
