@@ -134,3 +134,50 @@ cat3.products.create!({
 
 
 puts "DONE!"
+
+# Reviews
+
+puts "Recreating Reviews..."
+
+Review.destroy_all
+
+
+user1 = User.create!(
+  first_name: 'tom',
+  last_name: 'tomson',
+  email: 'tom@gmail.com',
+  password_digest: 'aaa'
+)
+Review.create!(
+  user_id: user1.id,
+  product_id: 1,
+  description: "Wow I love this!",
+  rating: 4
+)
+
+user2 = User.create!(
+  first_name: 'bob',
+  last_name: 'bobson',
+  email: 'bob@gmail.com',
+  password_digest: 'aaa'
+)
+Review.create!(
+  user_id: user2.id,
+  product_id: 8,
+  description: "cool"
+)
+
+user3 = User.create!(
+  first_name: 'bill',
+  last_name: 'billson',
+  email: 'bill@gmail.com',
+  password_digest: 'aaa'
+)
+Review.create!(
+  user_id: user3.id,
+  product_id: 5,
+  description: "Recommending to my friends.",
+  rating: 3
+)
+
+puts "DONE!"
