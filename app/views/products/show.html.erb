@@ -26,8 +26,10 @@
       </div>
     </div>
 
-    <div class='row'>
-      <h2>Reviews</h2>
+    <div class='reviews-container'>
+      <header>
+        <h2>Reviews</h2>
+      </header>
       <% @product.reviews.each do |review| %>
         <%= render 'products/review', review: review %>
       <% end %>

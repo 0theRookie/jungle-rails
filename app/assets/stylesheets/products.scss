@@ -80,6 +80,26 @@ main section.categories-show {
 main section.products-show {
 
   .product-detail {
+    .reviews-container{
+      background-color: lightgray;
+      padding: 20px;
+      padding-top: 0px;
+      header{
+        background-color: #88c9bb;
+        margin: 0 auto;
+        width: 100%;
+        h2{
+          margin-left: 150px;
+          padding-bottom: 3px;
+        }
+      }
+      .review{
+        background-color: #88c9bb;
+        opacity: .5;
+        margin: 0px 20px 10px 20px;
+        padding: 5px;
+      }
+    }
     img.main-img {
       max-width: 100%;
     }
