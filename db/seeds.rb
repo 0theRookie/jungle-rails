@@ -180,4 +180,83 @@ Review.create!(
   rating: 3
 )
 
+user4 = User.create!(
+  first_name: 'jim',
+  last_name: 'jimson',
+  email: 'jim@gmail.com',
+  password_digest: 'aaa'
+)
+Review.create!(
+  user_id: user4.id,
+  product_id: 5,
+  description: "It's good.",
+  rating: 3
+)
+
+user5 = User.create!(
+  first_name: 'kelly',
+  last_name: 'kellyson',
+  email: 'kelly@gmail.com',
+  password_digest: 'aaa'
+)
+Review.create!(
+  user_id: user5.id,
+  product_id: 8,
+  description: "Nice stuff guys.",
+  rating: 4
+)
+
+user6 = User.create!(
+  first_name: 'jerome',
+  last_name: 'jeromeson',
+  email: 'jerome@gmail.com',
+  password_digest: 'aaa'
+)
+Review.create!(
+  user_id: user6.id,
+  product_id: 11,
+  description: "I sent it back.",
+  rating: 1
+)
+
+user7 = User.create!(
+  first_name: 'ralph',
+  last_name: 'relson',
+  email: 'rel@gmail.com',
+  password_digest: 'aaa'
+)
+Review.create!(
+  user_id: user7.id,
+  product_id: 12,
+  description: "It doesnt fit my physique.",
+  rating: 2
+)
+
+user9 = User.create!(
+  first_name: 'bill',
+  last_name: 'billson',
+  email: 'bill@gmail.com',
+  password_digest: 'aaa'
+)
+Review.create!(
+  user_id: user9.id,
+  product_id: 10,
+  description: "Recommending to my friends.",
+  rating: 3
+)
+
+user8 = User.create!(
+  first_name: 'tem',
+  last_name: 'temson',
+  email: 'tem@gmail.com',
+  password_digest: 'aaa'
+)
+Review.create!(
+  user_id: user8.id,
+  product_id: 10,
+  description: "I would recommend to my friends, but my other friend bill already did.",
+  rating: 3
+)
+
+
 puts "DONE!"

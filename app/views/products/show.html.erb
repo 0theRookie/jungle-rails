@@ -26,6 +26,12 @@
       </div>
     </div>
 
+    <div class='row'>
+      <h2>Reviews</h2>
+      <% @product.reviews.each do |review| %>
+        <%= render 'products/review', review: review %>
+      <% end %>
+    </div>
   </article>
 
 </section>

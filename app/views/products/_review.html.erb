@@ -1,0 +1,11 @@
+<div class='review'>
+  <dl class='dl-horizontal'>
+  <% current_user = User.where(id: review.user_id).first %>
+  <dt>Name:</dt>
+  <dd><%= current_user.first_name %> <%= current_user.last_name %></dd>
+  <dt>Description:</dt>
+  <dd><%= review.description %></dd>
+  <dt>Optional Rating/5:</dt>
+  <dd><%= review.rating || "N/A" %></dd>
+  </dl>
+</div>
