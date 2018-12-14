@@ -28,3 +28,12 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Stripe
 
 ## Screenshots
+[Home screen](https://github.com/0theRookie/jungle-rails/blob/master/app/assets/images/Screen%20Shot%202018-12-14%20at%201.23.21%20PM.png)
+
+[One of the Category pages](https://github.com/0theRookie/jungle-rails/blob/master/app/assets/images/Screen%20Shot%202018-12-14%20at%201.23.34%20PM.png)
+
+[Comment and Rate](https://github.com/0theRookie/jungle-rails/blob/master/app/assets/images/Screen%20Shot%202018-12-14%20at%201.24.20%20PM.png)
+
+[Cart order](https://github.com/0theRookie/jungle-rails/blob/master/app/assets/images/Screen%20Shot%202018-12-14%20at%201.24.46%20PM.png)
+
+[Order Receipt](https://github.com/0theRookie/jungle-rails/blob/master/app/assets/images/Screen%20Shot%202018-12-14%20at%201.25.10%20PM.png)
