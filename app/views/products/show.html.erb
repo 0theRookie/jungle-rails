@@ -30,7 +30,16 @@
       <header>
         <h2>Reviews</h2>
       </header>
-      <% @product.reviews.each do |review| %>
+      <% if current_user %>
+      <div id='post-comment'>
+        <%= form_for [@product, @review] do |f| %>
+          <%= f.text_area :description %>
+          <%= f.select :rating, options_for_select([1, 2, 3, 4, 5]) %>
+          <%= f.submit "Post"%>
+        <% end %>
+      </div>
+      <% end %>
+      <% @product.reviews.order(created_at: :desc).each do |review| %>
         <%= render 'products/review', review: review %>
       <% end %>
     </div>

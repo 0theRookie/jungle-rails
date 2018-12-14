@@ -1,6 +1,7 @@
 <div class='review'>
   <dl class='dl-horizontal'>
   <% current_user = User.where(id: review.user_id).first %>
+
   <dt>Name:</dt>
   <dd><%= current_user.first_name %> <%= current_user.last_name %></dd>
   <dt>Description:</dt>
@@ -8,4 +9,9 @@
   <dt>Optional Rating/5:</dt>
   <dd><%= review.rating || "N/A" %></dd>
   </dl>
+  <% if session[:user_id] == review.user.id %>
+    <%= button_to "delete", 
+    product_review_url(:product_id => review.product_id, :id => review.id), 
+    :method => :delete %>  
+  <% end %>
 </div>
